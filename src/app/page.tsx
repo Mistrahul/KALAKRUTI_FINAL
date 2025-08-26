@@ -1,14 +1,11 @@
-'use client'
-import React, { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
-import Link from 'next/link';
+"use client"
+import React, { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import HomePage from './components/HomePage';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
 import FloatingCall from './components/FloatingCall';
 
 function App() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const router = useRouter();
 
   useEffect(() => {
@@ -33,7 +30,6 @@ function App() {
       contact: '/contact'
     };
     const target = pageUrls[page] || '/';
-    setIsMenuOpen(false);
     router.push(target);
   };
 

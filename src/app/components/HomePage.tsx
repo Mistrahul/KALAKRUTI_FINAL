@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useState, useEffect } from 'react';
 import { Phone, Home, Briefcase, Eye, Users, Award, Clock, ChevronDown, ChevronUp } from 'lucide-react';
 import FloatingWhatsApp from './FloatingWhatsApp';
@@ -288,14 +289,7 @@ const HomePage: React.FC<HomePageProps> = ({ handleNavigation }) => {
               <img 
                 src="https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg?auto=compress&cs=tinysrgb&w=800"
                 alt="Luxury living room interior by Kalakruti Associates Bhubaneswar"
-                srcSet="https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg?auto=compress&cs=tinysrgb&w=400 400w,
-                        https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg?auto=compress&cs=tinysrgb&w=800 800w"
-                sizes="(max-width: 768px) 100vw, 50vw"
-                srcSet="https://images.pexels.com/photos/1571468/pexels-photo-1571468.jpeg?auto=compress&cs=tinysrgb&w=400 400w,
-                        https://images.pexels.com/photos/1571468/pexels-photo-1571468.jpeg?auto=compress&cs=tinysrgb&w=800 800w"
-                sizes="(max-width: 768px) 100vw, 50vw"
-                srcSet="https://images.pexels.com/photos/1571470/pexels-photo-1571470.jpeg?auto=compress&cs=tinysrgb&w=400 400w,
-                        https://images.pexels.com/photos/1571470/pexels-photo-1571470.jpeg?auto=compress&cs=tinysrgb&w=800 800w"
+                srcSet="https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg?auto=compress&cs=tinysrgb&w=400 400w, https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg?auto=compress&cs=tinysrgb&w=800 800w"
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className="w-full h-64 md:h-80 object-cover rounded-lg shadow-xl"
                 loading="lazy"

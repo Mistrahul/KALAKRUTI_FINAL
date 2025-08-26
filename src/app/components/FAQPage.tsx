@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useState, useEffect } from 'react';
 import { 
   Search, 
@@ -9,7 +10,8 @@ import {
   Clock,
   DollarSign,
   Shield,
-  HelpCircle
+  HelpCircle,
+  Phone
 } from 'lucide-react';
 import FloatingWhatsApp from './FloatingWhatsApp';
 
@@ -242,7 +244,7 @@ const FAQPage: React.FC = () => {
       })).filter(section => section.faqs.length > 0);
       setFilteredSections(filtered);
     }
-  }, [searchTerm, faqSections]);
+  }, [searchTerm]);
 
   const toggleFAQ = (sectionTitle: string, index: number) => {
     setOpenSections(prev => ({

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useState, useEffect } from 'react';
 import { 
   Phone, 
@@ -582,11 +583,11 @@ const ContactPage: React.FC = () => {
               <a 
                 href="https://wa.me/919876543210?text=Hi%20Kalakruti%20Associates%2C%20I%20need%20interior%20design%20consultation"
                 target="_blank"
-                href="tel:+919876543210" 
+                rel="noopener noreferrer"
                 className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-orange-500 transition-all duration-300"
                 style={{ minHeight: '44px' }}
               >
-                Call Now: +91-98765-43210
+                Chat on WhatsApp
               </a>
             </div>
           </div>
