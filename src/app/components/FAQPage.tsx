@@ -645,8 +645,8 @@ const FAQPage: React.FC = () => {
             <p className="text-lg text-gray-600">Discover our complete range of services and resources</p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="text-center p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 scroll-animate opacity-0 translate-y-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="text-center p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 scroll-animate opacity-0 translate-y-8 mx-2 md:mx-0">
               <Briefcase className="w-12 h-12 text-orange-500 mx-auto mb-4" />
               <h3 className="text-lg font-bold text-gray-900 mb-2">Our Services</h3>
               <p className="text-gray-600 mb-4 text-sm">Complete interior design solutions for residential and commercial spaces.</p>
@@ -666,7 +666,7 @@ const FAQPage: React.FC = () => {
               </a>
             </div>
 
-            <div className="text-center p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 scroll-animate opacity-0 translate-y-8" style={{transitionDelay: '150ms'}}>
+            <div className="text-center p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 scroll-animate opacity-0 translate-y-8 mx-2 md:mx-0" style={{transitionDelay: '150ms'}}>
               <Home className="w-12 h-12 text-orange-500 mx-auto mb-4" />
               <h3 className="text-lg font-bold text-gray-900 mb-2">Portfolio</h3>
               <p className="text-gray-600 mb-4 text-sm">Browse our gallery of completed interior design projects.</p>

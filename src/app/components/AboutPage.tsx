@@ -298,11 +298,11 @@ const AboutPage: React.FC = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-12">
             {teamMembers.map((member, index) => (
               <div 
                 key={index}
-                className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 text-center scroll-animate opacity-0 translate-y-8"
+                className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 text-center scroll-animate opacity-0 translate-y-8 mx-2 md:mx-0"
                 style={{transitionDelay: `${index * 150}ms`}}
               >
                 <div className="w-20 h-20 bg-gradient-to-r from-amber-500 to-orange-500 rounded-full mx-auto mb-4 flex items-center justify-center">
@@ -339,11 +339,11 @@ const AboutPage: React.FC = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {serviceHighlights.map((highlight, index) => (
               <div 
                 key={index}
-                className="text-center p-8 bg-gray-50 rounded-lg hover:shadow-lg transition-all duration-300 scroll-animate opacity-0 translate-y-8"
+                className="text-center p-6 md:p-8 bg-gray-50 rounded-lg hover:shadow-lg transition-all duration-300 scroll-animate opacity-0 translate-y-8 mx-2 md:mx-0"
                 style={{transitionDelay: `${index * 150}ms`}}
               >
                 <div className="text-orange-500 mb-4 flex justify-center">
@@ -366,8 +366,8 @@ const AboutPage: React.FC = () => {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="scroll-animate opacity-0 -translate-x-8 transition-all duration-700 ease-out">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+            <div className="scroll-animate opacity-0 -translate-x-8 transition-all duration-700 ease-out mx-2 md:mx-0">
               <img 
                 src="https://images.pexels.com/photos/1571468/pexels-photo-1571468.jpeg?auto=compress&cs=tinysrgb&w=800"
                 alt="Interior design philosophy and approach by Kalakruti Associates"
@@ -375,7 +375,7 @@ const AboutPage: React.FC = () => {
                 loading="lazy"
               />
             </div>
-            <div className="scroll-animate opacity-0 translate-x-8 transition-all duration-700 ease-out">
+            <div className="scroll-animate opacity-0 translate-x-8 transition-all duration-700 ease-out mx-2 md:mx-0">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Sustainable, Cultural, and Functional Design</h3>
               <p className="text-gray-600 mb-6">
                 Our <strong>interior design philosophy</strong> is built on three fundamental pillars: sustainability, cultural authenticity, and functional excellence. We believe that great design should not only be beautiful but also environmentally responsible and deeply connected to local heritage.

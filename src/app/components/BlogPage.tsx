@@ -600,11 +600,11 @@ const BlogPage: React.FC = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {upcomingPosts.filter(post => post.pillar).slice(0, 6).map((post, index) => (
               <div 
                 key={post.id}
-                className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 scroll-animate opacity-0 translate-y-8"
+                className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 scroll-animate opacity-0 translate-y-8 mx-2 md:mx-0"
                 style={{transitionDelay: `${index * 150}ms`}}
               >
                 <div className="relative">
@@ -662,8 +662,8 @@ const BlogPage: React.FC = () => {
             Latest Interior Design Trends for Odisha Homes
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-12 mb-16">
-            <div className="scroll-animate opacity-0 -translate-x-8 transition-all duration-700 ease-out">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 mb-16">
+            <div className="scroll-animate opacity-0 -translate-x-8 transition-all duration-700 ease-out mx-2 md:mx-0">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">2025 Design Trends Perfect for Bhubaneswar Climate</h3>
               <p className="text-gray-600 mb-6">
                 Discover the hottest interior design trends for 2025 that are specifically curated for Odisha's coastal climate and cultural preferences. From sustainable materials to smart home integration, these trends will define modern Bhubaneswar homes.
@@ -689,7 +689,7 @@ const BlogPage: React.FC = () => {
                 Explore Trend-Based Designs <ArrowRight className="w-4 h-4 ml-1" />
               </a>
             </div>
-            <div className="scroll-animate opacity-0 translate-x-8 transition-all duration-700 ease-out">
+            <div className="scroll-animate opacity-0 translate-x-8 transition-all duration-700 ease-out mx-2 md:mx-0">
               <img 
                 src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800"
                 alt="2025 interior design trends for Bhubaneswar homes"

@@ -221,11 +221,11 @@ const PortfolioPage: React.FC = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-16">
             {portfolioProjects.map((project, index) => (
               <div 
                 key={index}
-                className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 scroll-animate opacity-0 translate-y-8"
+                className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 scroll-animate opacity-0 translate-y-8 mx-2 md:mx-0"
                 style={{transitionDelay: `${index * 150}ms`}}
               >
                 <div className="relative">
@@ -279,8 +279,8 @@ const PortfolioPage: React.FC = () => {
             Residential Interior Design Projects
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-12 mb-16">
-            <div className="scroll-animate opacity-0 -translate-x-8 transition-all duration-700 ease-out">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 mb-16">
+            <div className="scroll-animate opacity-0 -translate-x-8 transition-all duration-700 ease-out mx-2 md:mx-0">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Luxury Villa Interiors in Chandrasekharpur</h3>
               <p className="text-gray-600 mb-6">
                 Our luxury villa projects in Chandrasekharpur showcase sophisticated design elements that blend contemporary aesthetics with traditional Odisha craftsmanship. Each villa interior is meticulously planned to maximize space utilization while maintaining elegant proportions.

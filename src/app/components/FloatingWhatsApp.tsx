@@ -7,13 +7,13 @@ const FloatingWhatsApp: React.FC = () => {
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
   return (
-    <div className="fixed bottom-20 right-6 z-50">
+    <div className="fixed bottom-20 right-4 md:right-6 z-50">
       <a
         href={whatsappUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="whatsapp-float-btn bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 flex items-center justify-center"
-        style={{ minHeight: '56px', minWidth: '56px' }}
+        className="whatsapp-float-btn bg-green-500 hover:bg-green-600 text-white p-3 md:p-4 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 flex items-center justify-center"
+        style={{ minHeight: '48px', minWidth: '48px' }}
         aria-label="Chat on WhatsApp"
       >
         <MessageCircle className="w-6 h-6" />

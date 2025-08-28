@@ -230,11 +230,11 @@ const ContactPage: React.FC = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {contactMethods.map((method, index) => (
               <div 
                 key={index}
-                className="bg-white p-8 rounded-lg shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 text-center scroll-animate opacity-0 translate-y-8"
+                className="bg-white p-6 md:p-8 rounded-lg shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 text-center scroll-animate opacity-0 translate-y-8 mx-2 md:mx-0"
                 style={{transitionDelay: `${index * 150}ms`}}
               >
                 <div className="text-orange-500 mb-4 flex justify-center">
@@ -279,7 +279,7 @@ const ContactPage: React.FC = () => {
               </div>
             ) : (
               <form className="contact-form space-y-6" onSubmit={handleSubmit}>
-                <div className="grid md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
                       Full Name *

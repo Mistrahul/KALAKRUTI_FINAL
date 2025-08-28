@@ -332,11 +332,11 @@ const ServicesPage: React.FC = () => {
 
           <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center scroll-animate opacity-0 translate-y-6 transition-all duration-600 ease-out">Residential Interior Design Solutions</h2>
           
-          <div className="grid lg:grid-cols-2 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-16">
             {services.slice(0, 2).map((service, index) => (
               <div 
                 key={index}
-                className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 scroll-animate opacity-0 translate-x-8"
+                className="bg-white p-6 md:p-8 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 scroll-animate opacity-0 translate-x-8 mx-2 md:mx-0"
                 style={{transitionDelay: `${index * 200}ms`}}
               >
                 <div className="text-orange-500 mb-4">
@@ -363,8 +363,8 @@ const ServicesPage: React.FC = () => {
           </div>
 
           {/* Service Images */}
-          <div className="grid md:grid-cols-2 gap-8 mb-16">
-            <div className="scroll-animate opacity-0 -translate-x-8 transition-all duration-700 ease-out">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-16">
+            <div className="scroll-animate opacity-0 -translate-x-8 transition-all duration-700 ease-out mx-2 md:mx-0">
               <img 
                 src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800"
                 alt="Residential interior design services by Kalakruti Associates Bhubaneswar"
@@ -372,7 +372,7 @@ const ServicesPage: React.FC = () => {
                 loading="lazy"
               />
             </div>
-            <div className="scroll-animate opacity-0 translate-x-8 transition-all duration-700 ease-out" style={{transitionDelay: '200ms'}}>
+            <div className="scroll-animate opacity-0 translate-x-8 transition-all duration-700 ease-out mx-2 md:mx-0" style={{transitionDelay: '200ms'}}>
               <img 
                 src="https://images.pexels.com/photos/1571468/pexels-photo-1571468.jpeg?auto=compress&cs=tinysrgb&w=800"
                 alt="Modular kitchen design and installation services Bhubaneswar"
@@ -384,11 +384,11 @@ const ServicesPage: React.FC = () => {
 
           <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center scroll-animate opacity-0 translate-y-6 transition-all duration-600 ease-out">Commercial Interior Design Services</h2>
           
-          <div className="grid lg:grid-cols-2 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-16">
             {services.slice(2, 4).map((service, index) => (
               <div 
                 key={index}
-                className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 scroll-animate opacity-0 translate-x-8"
+                className="bg-white p-6 md:p-8 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 scroll-animate opacity-0 translate-x-8 mx-2 md:mx-0"
                 style={{transitionDelay: `${index * 200}ms`}}
               >
                 <div className="text-orange-500 mb-4">
@@ -415,8 +415,8 @@ const ServicesPage: React.FC = () => {
           </div>
 
           {/* Commercial Images */}
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="scroll-animate opacity-0 -translate-x-8 transition-all duration-700 ease-out">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+            <div className="scroll-animate opacity-0 -translate-x-8 transition-all duration-700 ease-out mx-2 md:mx-0">
               <img 
                 src="https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg?auto=compress&cs=tinysrgb&w=800"
                 alt="Commercial office interior design in Cuttack by Kalakruti Associates"
@@ -424,7 +424,7 @@ const ServicesPage: React.FC = () => {
                 loading="lazy"
               />
             </div>
-            <div className="scroll-animate opacity-0 translate-x-8 transition-all duration-700 ease-out" style={{transitionDelay: '200ms'}}>
+            <div className="scroll-animate opacity-0 translate-x-8 transition-all duration-700 ease-out mx-2 md:mx-0" style={{transitionDelay: '200ms'}}>
               <img 
                 src="https://images.pexels.com/photos/1571470/pexels-photo-1571470.jpeg?auto=compress&cs=tinysrgb&w=800"
                 alt="Vastu-compliant interior design services in Odisha by Kalakruti Associates"

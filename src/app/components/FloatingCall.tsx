@@ -6,11 +6,11 @@ const FloatingCall: React.FC = () => {
   const phoneUrl = `tel:${phoneNumber}`;
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 mb-4">
+    <div className="fixed bottom-6 right-4 md:right-6 z-50 mb-4">
       <a
         href={phoneUrl}
-        className="call-float-btn bg-blue-500 hover:bg-blue-600 text-white p-4 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 flex items-center justify-center"
-        style={{ minHeight: '56px', minWidth: '56px' }}
+        className="call-float-btn bg-blue-500 hover:bg-blue-600 text-white p-3 md:p-4 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 flex items-center justify-center"
+        style={{ minHeight: '48px', minWidth: '48px' }}
         aria-label="Call us"
       >
         <Phone className="w-6 h-6" />

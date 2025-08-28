@@ -99,7 +99,7 @@ const HomePage: React.FC<HomePageProps> = ({ handleNavigation }) => {
   return (
     <>
       {/* Hero Section */}
-      <section className="hero-section relative min-h-screen flex items-center justify-center scroll-animate opacity-0 translate-y-8 transition-all duration-700 ease-out">
+      <section className="hero-section relative min-h-[60vh] flex items-start justify-center scroll-animate opacity-0 translate-y-8 transition-all duration-700 ease-out">
         {/* Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -115,18 +115,18 @@ const HomePage: React.FC<HomePageProps> = ({ handleNavigation }) => {
         
         {/* Content */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="hero-content text-center relative z-10 pt-20">
-            <h1 className="hero-title text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 md:mb-6 leading-tight">
+          <div className="hero-content text-center relative z-10 pt-12 sm:pt-16 md:pt-20 lg:pt-24">
+            <h1 className="hero-title text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3 md:mb-4 leading-tight">
               Premier Interior Designer in Bhubaneswar | Kalakruti Associates
             </h1>
-            <p className="text-base sm:text-lg md:text-xl text-white mb-3 md:mb-4 italic font-medium">
+            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-white mb-2 md:mb-3 font-medium">
               ଆପଣଙ୍କ ସ୍ବପ୍ନର ଘର, ଆମର କଳାକୃତି
             </p>
-            <p className="text-sm sm:text-base md:text-lg text-white/90 mb-6 md:mb-8 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-sm sm:text-base md:text-lg text-white/90 mb-4 md:mb-6 max-w-3xl mx-auto leading-relaxed">
               Your Dream Home, Our Masterpiece
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-8 sm:mb-12 md:mb-16">
               <a 
                 href="#contact" 
                 className="hero-cta bg-gradient-to-r from-amber-500 to-orange-500 text-white px-6 sm:px-8 py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105 text-sm sm:text-base"
@@ -164,12 +164,12 @@ const HomePage: React.FC<HomePageProps> = ({ handleNavigation }) => {
       {/* Voice Search Callouts */}
       <section className="py-8 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-green-50 border border-green-200 rounded-lg p-4 scroll-animate opacity-0 translate-x-8 transition-all duration-600 ease-out">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+            <div className="bg-green-50 border border-green-200 rounded-lg p-4 scroll-animate opacity-0 translate-x-8 transition-all duration-600 ease-out mx-2 md:mx-0">
               <h3 className="text-lg font-semibold text-green-800 mb-2">🎤 Voice Search Friendly</h3>
               <p className="text-green-700">"Looking for the best interior designer near me in Bhubaneswar? Kalakruti Associates is just a call away."</p>
             </div>
-            <div className="bg-purple-50 border border-purple-200 rounded-lg p-4 scroll-animate opacity-0 translate-x-8 transition-all duration-600 ease-out" style={{transitionDelay: '200ms'}}>
+            <div className="bg-purple-50 border border-purple-200 rounded-lg p-4 scroll-animate opacity-0 translate-x-8 transition-all duration-600 ease-out mx-2 md:mx-0" style={{transitionDelay: '200ms'}}>
               <h3 className="text-lg font-semibold text-purple-800 mb-2">🏠 Vastu Expertise</h3>
               <p className="text-purple-700">"Need a vastu-compliant interior design? Our expert consultants blend tradition with modern style."</p>
             </div>
@@ -225,11 +225,11 @@ const HomePage: React.FC<HomePageProps> = ({ handleNavigation }) => {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {services.map((service, index) => (
               <div 
                 key={index}
-                className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105 scroll-animate opacity-0 translate-x-8"
+                className="bg-white p-6 md:p-8 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105 scroll-animate opacity-0 translate-x-8 mx-2 md:mx-0"
                 style={{transitionDelay: `${index * 200}ms`}}
               >
                 <div className="text-orange-500 mb-4">
